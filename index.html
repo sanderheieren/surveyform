@@ -3,7 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Survey Form</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Thank you for submitting your information</p>
+    </header>
+    <form id="survey-form">
+      <label for="name" id="name-label">Name</label>
+      <input
+        type="text"
+        id="name"
+        placeholder="Enter Your Name"
+        required="true"
+      />
+      <label for="email" id="email-label">Email</label>
+      <input
+        type="email"
+        id="email"
+        placeholder="Enter Your Email"
+        required="true"
+      />
+      <label for="age" id="number-label">Age</label>
+      <input
+        type="number"
+        min="0"
+        max="120"
+        id="number"
+        placeholder="Age"
+        required="true"
+      />
+
+      <select name="food" id="dropdown">
+        <label for="food"> What is your favorite food? </label>
+        <option value="Sushi">Sushi</option>
+        <option value="Pizza">Pizza</option>
+        <option value="Kebab">Kebab</option>
+        <option value="Chicken">Chicken</option>
+        <option value="Tofu">Tofu</option>
+      </select>
+      <label for=""></label>
+    </form>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
 </html>
