@@ -34,3 +34,15 @@ body {
 ::placeholder {
   color: black;
 }
+#submit {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(123, 256, 223);
+  margin-top: 1em;
+  width: 80%;
+  font-size: 1em;
+}
+#comments {
+  border-radius: 10px;
+  padding: 10px;
+}
