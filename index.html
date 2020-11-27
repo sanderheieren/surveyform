@@ -6,98 +6,121 @@
     <title>Survey Form</title>
   </head>
   <body>
-    <header class="header">
-      <h1 id="title">Survey Form</h1>
-      <p id="description">Thank you for submitting your information</p>
-    </header>
-    <form id="survey-form">
-      <label for="name" id="name-label"
-        >Name
-        <input
-          type="text"
-          id="name"
-          placeholder="Enter Your Name"
-          required="true"
-        />
-      </label>
-      <label for="email" id="email-label"
-        >Email
-        <input
-          type="email"
-          id="email"
-          placeholder="Enter Your Email"
-          required="true"
-        />
-      </label>
-      <label for="age" id="number-label"
-        >Age
-        <input
-          type="number"
-          min="0"
-          max="120"
-          id="number"
-          placeholder="Age"
-          required="true"
-        />
-      </label>
+    <main class="container">
+      <header class="header">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thank you for submitting your information</p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label"
+            >Name
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter Your Name"
+              required="true"
+            />
+          </label>
+          <label for="email" id="email-label"
+            >Email
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter Your Email"
+              required="true"
+            />
+          </label>
+          <label for="age" id="number-label"
+            >Age
+            <input
+              type="number"
+              min="0"
+              max="120"
+              id="number"
+              placeholder="Age"
+              required="true"
+            />
+          </label>
+        </div>
+        <div class="form-group">
+          <select name="food" id="dropdown">
+            <label for="food">
+              What is your favorite food?
+              <option value="Sushi">Sushi</option>
+              <option value="Pizza">Pizza</option>
+              <option value="Kebab">Kebab</option>
+              <option value="Chicken">Chicken</option>
+              <option value="Tofu">Tofu</option>
+            </label>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="">What Restaurant Would Like To Eat At?</label>
 
-      <select name="food" id="dropdown">
-        <label for="food">
-          What is your favorite food?
-          <option value="Sushi">Sushi</option>
-          <option value="Pizza">Pizza</option>
-          <option value="Kebab">Kebab</option>
-          <option value="Chicken">Chicken</option>
-          <option value="Tofu">Tofu</option>
+          <label for="Michellin">
+            <input
+              value="Michellin"
+              id="Michellin"
+              type="radio"
+              name="restaurant"
+            />Michellin</label
+          >
+          <label for="Han Far">
+            <input
+              value="Han Far"
+              id="Han Far"
+              type="radio"
+              name="restaurant"
+            />Han Far</label
+          >
+          <label for="Faste">
+            <input
+              value="Faste"
+              id="faste"
+              type="radio"
+              name="restaurant"
+            />Faste</label
+          >
+        </div>
+        <div class="form group">
+          <p class="diet-paragraph">
+            What Diet Would You Like To Try? (Check all that apply)
+          </p>
+          <label for="snail">
+            <input id="snail" name="snail" value="snail" type="checkbox" />
+            Snail
+          </label>
+          <label for="insects">
+            <input
+              id="insects"
+              name="insects"
+              value="insects"
+              type="checkbox"
+            />
+            Insects
+          </label>
+          <label for="vegan">
+            <input id="vegan" name="vegan" value="vegan" type="checkbox" />
+            Vegan
+          </label>
+        </div>
+        <div class="form-group"></div>
+        <label for="comments"
+          >Anything else you would like to add?
+
+          <textarea
+            id="comments"
+            name="comments"
+            type="textarea"
+            placeholder="Enter your comment here..."
+          ></textarea>
         </label>
-      </select>
-      <label for="">What Restaurant Would Like To Eat At?</label>
-
-      <label for="Michellin">
-        <input
-          value="Michellin"
-          id="Michellin"
-          type="radio"
-          name="restaurant"
-        />Michellin</label
-      >
-      <label for="Han Far">
-        <input value="Han Far" id="Han Far" type="radio" name="restaurant" />Han
-        Far</label
-      >
-      <label for="Faste">
-        <input
-          value="Faste"
-          id="faste"
-          type="radio"
-          name="restaurant"
-        />Faste</label
-      >
-      <p class="diet-paragraph">
-        What Diet Would You Like To Try? (Check all that apply)
-      </p>
-      <label for="snail">
-        <input id="snail" name="snail" value="snail" type="checkbox" /> Snail
-      </label>
-      <label for="insects">
-        <input id="insects" name="insects" value="insects" type="checkbox" />
-        Insects
-      </label>
-      <label for="vegan">
-        <input id="vegan" name="vegan" value="vegan" type="checkbox" /> Vegan
-      </label>
-      <label for="comments"
-        >Anything else you would like to add?
-
-        <textarea
-          id="comments"
-          name="comments"
-          type="textarea"
-          placeholder="Enter your comment here..."
-        ></textarea>
-        <button id="submit" type="submit">Submit</button>
-      </label>
-    </form>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <div class="form-group">
+          <button id="submit" type="submit">Submit</button>
+        </div>
+      </form>
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </main>
   </body>
 </html>
