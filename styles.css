@@ -34,6 +34,11 @@ body {
 ::placeholder {
   color: black;
 }
+.form-group:last-child {
+  display: flex;
+  justify-content: center;
+  max-width: 80%;
+}
 #submit {
   padding: 10px;
   border-radius: 5px;
@@ -41,8 +46,14 @@ body {
   margin-top: 1em;
   width: 80%;
   font-size: 1em;
+  justify-content: center;
 }
+
 #comments {
   border-radius: 10px;
   padding: 10px;
+  font-size: 20px;
+}
+textarea {
+  max-width: 90%;
 }
