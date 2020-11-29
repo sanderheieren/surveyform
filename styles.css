@@ -8,12 +8,12 @@
   font-family: sans-serif;
 }
 body {
-  background: linear-gradient(
-      rgba(141, 153, 174, 0.8),
-      rgba(141, 153, 174, 0.5)
-    ),
-    url("samuel-beckett-bridge.jpg") no-repeat fixed;
+  background: linear-gradient(rgba(190, 153, 174, 0.8), rgba(141, 0, 174, 0.5)),
+    url("https://mdn.mozillademos.org/files/12057/starsolid.gif") no-repeat
+      fixed;
   font-family: "Poppins", sans-serif;
+  /* background-image: url("https://mdn.mozillademos.org/files/12057/starsolid.gif"); */
+  background-attachment: fixed;
 }
 
 .form-section {
