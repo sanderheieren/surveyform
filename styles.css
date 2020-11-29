@@ -15,6 +15,9 @@ body {
   /* background-image: url("https://mdn.mozillademos.org/files/12057/starsolid.gif"); */
   background-attachment: fixed;
 }
+#description {
+  font-size: 1.5rem;
+}
 
 .form-section {
   background-color: rgba(0, 0, 0, 0.6);
@@ -60,19 +63,14 @@ body {
 ::placeholder {
   color: black;
 }
-.form-group:last-child {
-  display: flex;
-  justify-content: center;
-  max-width: 80%;
-}
+
 #submit {
-  padding: 10px;
+  padding: 1rem;
   border-radius: 5px;
-  background-color: rgb(160, 241, 3);
+  background-color: rgb(193, 195, 200);
   margin-top: 1em;
-  width: 80%;
   font-size: 1em;
-  justify-content: center;
+  width: 100%;
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.6);
 }
 
@@ -80,7 +78,12 @@ body {
   border-radius: 10px;
   padding: 10px;
   font-size: 20px;
+  width: 100%;
+  height: auto;
 }
-textarea {
-  max-width: 90%;
+input:focus::-webkit-input-placeholder {
+  color: gray;
+}
+textarea:focus::-webkit-input-placeholder {
+  color: gray;
 }
